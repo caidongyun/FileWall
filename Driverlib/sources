@@ -1,0 +1,15 @@
+TARGETNAME=FileWall
+TARGETTYPE=LIBRARY
+TARGETPATH=..\bin\$(_NT_TARGET_VERSION)
+
+SOURCES=PackPoolTag.c		\
+		PtAddEntry.c		\
+		PtDeleteById.c		\
+		PtEmptyTable.c		\
+		PtInitializeTable.c	\
+		RegGetObject.c
+
+INCLUDES=$(DDK_INC_PATH)
+
+
+#MSC_WARNING_LEVEL=/W4 /WX /Wp64

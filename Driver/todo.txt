@@ -1,0 +1,7 @@
+hash!
+ok	DriverEntry!
+ok	uninitialization of generic table?
+ok	macro to return file name and position
+	
+sync access to generic table?
+IoQueryFileDosDeviceName do we need to free memory?

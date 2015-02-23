@@ -1,0 +1,23 @@
+CREATE DATABASE `bugreports` ;
+
+CREATE TABLE `bugreports`.`reports` (
+`ID` INT( 10 ) NOT NULL AUTO_INCREMENT ,
+`OSVer` TEXT NOT NULL,
+`ErrorDate` DATETIME NOT NULL ,
+`DriverVer` VARCHAR( 12 ) NOT NULL ,
+`ServiceVer` VARCHAR( 12 ) NOT NULL ,
+`ClientVer` VARCHAR( 12 ) NOT NULL ,
+`ErrorID` TEXT NOT NULL ,
+`ExceptionDetails` TEXT NOT NULL ,
+`UserActions` TEXT NOT NULL ,
+`email` TEXT NOT NULL ,
+PRIMARY KEY ( `ID` ) 
+) ENGINE = MYISAM ;
+
+CREATE TABLE `bugreports`.`logdetails` (
+`ID` INT( 10 ) NOT NULL AUTO_INCREMENT ,
+`Message` TEXT NOT NULL ,
+`ReportID` INT( 10 ) NOT NULL ,
+PRIMARY KEY ( `ID` ) ,
+CONSTRAINT FOREIGN KEY (`ReportID`) REFERENCES `ID` (`reports`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE = MYISAM ;

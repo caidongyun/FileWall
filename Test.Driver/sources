@@ -1,0 +1,22 @@
+TARGETNAME=TestDriver
+TARGETTYPE=DRIVER
+TARGETPATH=..\bin\$(_NT_TARGET_VERSION)
+
+# cfixkdrv.lib is required. 
+TARGETLIBS= $(TARGETLIBS) \
+			$(CFIX_HOME)\lib\$(TARGET_DIRECTORY)\cfixkdrv.lib \
+			..\bin\$(_NT_TARGET_VERSION)\$(TARGET_DIRECTORY)\FileWall.lib
+
+# The cfix include directory is required.
+INCLUDES=$(CFIX_HOME)\include;$(DDK_INC_PATH)
+
+SOURCES=Test.PtAddEntry.c \
+		Test.PtDeleteByID.c \
+		Test.PtEmptyTable.c \
+		Test.PtInitializeTable.c \
+		Test.RegGetObject.c
+
+MSC_WARNING_LEVEL=/W4 /Wp64
+
+# It is essential that CFIX_KERNELMODE is defined here!
+C_DEFINES=/DCFIX_KERNELMODE

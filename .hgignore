@@ -1,0 +1,35 @@
+# Ignore file for Visual Studio 2010
+
+# use glob syntax
+syntax: glob
+
+# Ignore these directories
+bin/
+CVS/
+[Dd]ebug*/
+obj/
+[Rr]elease*/
+_ReSharper*/
+
+# Ignore these file types
+[Bb]uild[Ll]og.*
+*~
+.\#*
+*.bak
+*.ncb
+*.obj
+*.pdb
+*.suo
+*.swp
+*.user
+*.sln.cache
+*.resharper
+*.Cache
+*.dbmdl
+*.gpState
+*.schemaview
+*.dotCover
+*.t4properties
+*.err
+*.log
+*.wrn

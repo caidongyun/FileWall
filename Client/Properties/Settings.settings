@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="VitaliiPianykh.FileWall.Client.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="UICulture" Type="System.Globalization.CultureInfo" Scope="User">
+      <Value Profile="(Default)">(Default)</Value>
+    </Setting>
+    <Setting Name="SkinName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Caramel</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

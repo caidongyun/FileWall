@@ -1,0 +1,86 @@
+<?xml version="1.0" standalone="yes"?>
+<Ruleset xmlns="http://tempuri.org/Ruleset.xsd">
+  <Categories>
+    <ID>0</ID>
+    <Name>Test Category</Name>
+    <ImageData />
+    <Description />
+  </Categories>
+  <Items>
+    <ID>0</ID>
+    <Name>Test Item</Name>
+    <CategoryID>0</CategoryID>
+  </Items>
+  <Rules>
+    <ID>0</ID>
+    <Name>Test Rule #1</Name>
+    <Action xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <Action>2</Action>
+    </Action>
+    <Active>true</Active>
+    <Log>false</Log>
+    <PathID>0</PathID>
+    <ProcessID>1</ProcessID>
+    <ItemID>0</ItemID>
+  </Rules>
+  <Rules>
+    <ID>1</ID>
+    <Name>Test Rule #2</Name>
+    <Action xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <Action>1</Action>
+    </Action>
+    <Active>true</Active>
+    <Log>false</Log>
+    <PathID>1</PathID>
+    <ProcessID>1</ProcessID>
+    <ItemID>0</ItemID>
+  </Rules>
+  <Rules>
+    <ID>2</ID>
+    <Name>Test Rule #3</Name>
+    <Action xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <Action>0</Action>
+    </Action>
+    <Active>true</Active>
+    <Log>false</Log>
+    <PathID>2</PathID>
+    <ProcessID>1</ProcessID>
+    <ItemID>0</ItemID>
+  </Rules>
+  <Rules>
+    <ID>3</ID>
+    <Name>Test Rule #4</Name>
+    <Action xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <Action>2</Action>
+    </Action>
+    <Active>true</Active>
+    <Log>false</Log>
+    <PathID>3</PathID>
+    <ProcessID>0</ProcessID>
+    <ItemID>0</ItemID>
+  </Rules>
+  <Paths>
+    <ID>0</ID>
+    <Path>c:\protected1.txt</Path>
+  </Paths>
+  <Paths>
+    <ID>1</ID>
+    <Path>c:\protected2.txt</Path>
+  </Paths>
+  <Paths>
+    <ID>2</ID>
+    <Path>c:\protected3.txt</Path>
+  </Paths>
+  <Paths>
+    <ID>3</ID>
+    <Path>HKCU\SOFTWARE\VitaliiPianykh\Test</Path>
+  </Paths>
+  <Processes>
+    <ID>0</ID>
+    <Path>*</Path>
+  </Processes>
+  <Processes>
+    <ID>1</ID>
+    <Path>C:\WINDOWS\system32\notepad.exe</Path>
+  </Processes>
+</Ruleset>

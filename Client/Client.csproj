@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E9340405-F9EC-45DE-B2E5-C975BB80ED6C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VitaliiPianykh.FileWall.Client</RootNamespace>
+    <AssemblyName>FileWallClient</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>FileWall.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v8.3, Version=8.3.6.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v8.3, Version=8.3.6.0, Culture=neutral, PublicKeyToken=f2ff8decaea57409, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.OfficeSkins.v8.3, Version=8.3.6.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v8.3, Version=8.3.6.0, Culture=neutral, PublicKeyToken=f2ff8decaea57409, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v8.3, Version=8.3.6.0, Culture=neutral, PublicKeyToken=f2ff8decaea57409, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v8.3, Version=8.3.6.0, Culture=neutral, PublicKeyToken=f2ff8decaea57409, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v8.3.Core, Version=8.3.6.0, Culture=neutral, PublicKeyToken=f2ff8decaea57409, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v8.3.Win, Version=8.3.6.0, Culture=neutral, PublicKeyToken=f2ff8decaea57409, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v8.3, Version=8.3.6.0, Culture=neutral, PublicKeyToken=f2ff8decaea57409, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v8.3, Version=8.3.6.0, Culture=neutral, PublicKeyToken=f2ff8decaea57409, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v8.3, Version=8.3.6.0, Culture=neutral, PublicKeyToken=f2ff8decaea57409, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TaskScheduler, Version=1.3.3497.21667, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\TaskScheduler.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClientInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormBugReport\FormBugReport.cs" />
+    <Compile Include="FormBugReport\FormBugReport.Designer.cs">
+      <DependentUpon>FormBugReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBugReport\FormBugReportPresenter.cs" />
+    <Compile Include="FormBugReport\IFormBugReport.cs" />
+    <Compile Include="FormRegistryBrowser.cs" />
+    <Compile Include="FormRegistryBrowser.Designer.cs">
+      <DependentUpon>FormRegistryBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRuleEdit.cs" />
+    <Compile Include="FormRuleEdit.Designer.cs">
+      <DependentUpon>FormRuleEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainView\IMainView.cs" />
+    <Compile Include="LogViewModel.cs" />
+    <Compile Include="MainView\MainViewControl.cs" />
+    <Compile Include="MainView\MainViewControl.Designer.cs">
+      <DependentUpon>MainViewControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainView\MainViewPresenter.cs" />
+    <Compile Include="ServiceGateway.cs">
+    </Compile>
+    <Compile Include="FormAccessRequest.cs" />
+    <Compile Include="FormAccessRequest.designer.cs">
+      <DependentUpon>FormAccessRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain\FormMain.cs" />
+    <Compile Include="FormMain\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain\FormMainPresenter.cs" />
+    <Compile Include="FormMain\IFormMain.cs" />
+    <Compile Include="LogViewControl\ILogView.cs" />
+    <Compile Include="LogViewControl\LogViewControl.cs" />
+    <Compile Include="LogViewControl\LogViewControl.Designer.cs">
+      <DependentUpon>LogViewControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogViewControl\LogViewPresenter.cs" />
+    <Compile Include="PreferencesControl.cs" />
+    <Compile Include="PreferencesControl.Designer.cs">
+      <DependentUpon>PreferencesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAccessRequest.resx">
+      <DependentUpon>FormAccessRequest.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAccessRequest.ru.resx">
+      <DependentUpon>FormAccessRequest.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAccessRequest.uk.resx">
+      <DependentUpon>FormAccessRequest.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBugReport\FormBugReport.resx">
+      <DependentUpon>FormBugReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain\FormMain.ru.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain\FormMain.uk.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistryBrowser.resx">
+      <DependentUpon>FormRegistryBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRuleEdit.resx">
+      <DependentUpon>FormRuleEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogViewControl\LogViewControl.resx">
+      <DependentUpon>LogViewControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainView\MainViewControl.resx">
+      <DependentUpon>MainViewControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreferencesControl.resx">
+      <DependentUpon>PreferencesControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.ru.resx">
+      <LastGenOutput>Resources.ru.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.uk.resx">
+      <LastGenOutput>Resources.ru.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RulesetGrid.resx">
+      <DependentUpon>RulesetGrid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RulesetGrid.ru.resx">
+      <DependentUpon>RulesetGrid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RulesetGrid.cs" />
+    <Compile Include="RulesetGrid.Designer.cs">
+      <DependentUpon>RulesetGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceInterfaceManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Shared\Shared.csproj">
+      <Project>{29EBD4B3-93AA-4E70-80D0-35B872BF3374}</Project>
+      <Name>Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32x32\DefaulItemIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\32x32\DefaultCategoryIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32x32\Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32x32\RefreshRuleset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48x48\Preferences.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32x32\Language.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32x32\Skin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32x32\Preferences.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32x32\ClearEvents.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32x32\EventDetails.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16x16\RefreshEvents.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32x32\Events.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16x16\AllowAccess.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16x16\Filesystem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16x16\Registry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32x32\SaveAs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48x48\Bug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32x32\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FileWall.ico" />
+    <None Include="Resources\16x16\AlwaysAsk.png" />
+    <None Include="Resources\AccessRequestMovie.gif" />
+    <None Include="Resources\24x24\BlockAccess.png" />
+    <None Include="Resources\24x24\AllowAccess.png" />
+    <None Include="Resources\VitaliiPianykhLogo.gif" />
+    <None Include="Resources\48x48\FileWall.png" />
+    <None Include="Resources\16x16\RegistryPermits.png" />
+    <None Include="Resources\16x16\RegistryBlocks.png" />
+    <None Include="Resources\16x16\FilesysPermits.png" />
+    <None Include="Resources\16x16\FilesysBlocks.png" />
+    <None Include="Resources\16x16\BlockAccess.png" />
+    <None Include="Resources\32x32\ShowRules.png" />
+    <None Include="FileWallClient.exe.manifest" />
+    <None Include="Resources\32x32\FileWall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>rem "C:\Program Files\Microsoft SDKs\Windows\v6.0A\bin\mt.exe" -manifest "$(ProjectDir)$(TargetName).exe.manifest"  –outputresource:"$(TargetDir)$(TargetFileName)";#1
+rem Workaround for bug (http://connect.microsoft.com/VisualStudio/feedback/ViewFeedback.aspx?FeedbackID=278352)
+rem "C:\Program Files\Microsoft SDKs\Windows\v6.0A\bin\mt.exe" -manifest "$(ProjectDir)$(TargetName).exe.manifest"  –outputresource:"$(ProjectDir)obj\$(ConfigurationName)\$(TargetFileName)";#1
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>

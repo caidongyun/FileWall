@@ -1,0 +1,17 @@
+TARGETNAME=FileWall$(AP_PLATFORM)
+TARGETTYPE=DRIVER
+DRIVERTYPE=FS
+TARGETPATH=..\bin\$(_NT_TARGET_VERSION)
+
+TARGETLIBS= $(TARGETLIBS) \
+            $(IFSKIT_LIB_PATH)\fltMgr.lib \
+            ..\bin\$(_NT_TARGET_VERSION)\$(TARGET_DIRECTORY)\FileWall.lib
+			
+INCLUDES= ..\inc
+
+SOURCES=FileWall.rc \
+		FileWall.c \
+		Communication.c \
+		Filesystem.c \
+		Registry.c   \
+		Utilites.c
